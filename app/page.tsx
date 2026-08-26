@@ -35,10 +35,12 @@ export default function StatusPage() {
         Live embeds
       </h2>
       <ul style={{ paddingLeft: 18, fontSize: 13, lineHeight: 1.8 }}>
-        <li>
-          <code>/embed/command-strip</code> — Command&apos;s four-tile metric strip, read live from the Command
-          database. Embedded on the Command page as a Notion embed block.
-        </li>
+        <li><code>/embed/command-strip</code> — Command&apos;s four-tile metric strip.</li>
+        <li><code>/embed/command-brief</code> — a one-paragraph live read of what needs you and what&apos;s blocked, computed from real rows, never invented.</li>
+        <li><code>/embed/needs-you</code> — every row where the Needs you formula is true, sorted by priority.</li>
+        <li><code>/embed/by-source</code> — row counts grouped by the Source database formula.</li>
+        <li><code>/embed/database-note</code> — the static explainer of how Command&apos;s database works, styled to match.</li>
+        <li>All five read the Command database live and are embedded on the Command page as Notion embed blocks.</li>
       </ul>
 
       <h2 style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: ".14em", color: "var(--ink-faint, #969087)", marginTop: 28 }}>

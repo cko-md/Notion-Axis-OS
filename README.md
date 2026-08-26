@@ -19,6 +19,6 @@ Icons and covers are hosted here so Notion's `icon`/`cover` page parameters (whi
 
 ## Deploy
 
-This project was first deployed via Vercel's manual file-upload path (no git yet). Once this repo has real commits, reconnect the Vercel project (`notion-axis-os`) to it in the Vercel dashboard for git-based deploys — every push to `main` then redeploys automatically.
+This repo is pushed to `github.com/cko-md/Notion-Axis-OS` and the Vercel project (`notion-axis-os`) is connected to it for git-based deploys — every push to `main` redeploys automatically. A full-repo build from commit `ea20162` (app code, `/ds` CSS, `/icons`, `/covers`) has been built and verified serving correctly as a preview deployment; promote it to production from the Vercel dashboard (Deployments tab → that deployment → Promote to Production) to bring icons/covers onto the live domain.
 
 See `axis-notion-translation-spec.md` in the AXIS Notion workspace project (claude.ai) for the full design-to-Notion translation spec, including the embed-layer rationale and build order.
