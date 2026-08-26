@@ -222,5 +222,19 @@
     "stroke": "#9a7c46",
     "svg": "/home/claude/build/icons/svg/system.svg",
     "png": "/home/claude/build/icons/png/system.png"
+  },
+  "clients": {
+    "lucide": "handshake",
+    "tier": "shared",
+    "stroke": "#9a7c46",
+    "svg": "build/icons/svg/clients.svg",
+    "png": "build/icons/png/clients.png"
+  },
+  "projects": {
+    "lucide": "folder-kanban",
+    "tier": "shared",
+    "stroke": "#9a7c46",
+    "svg": "build/icons/svg/projects.svg",
+    "png": "build/icons/png/projects.png"
   }
 }
