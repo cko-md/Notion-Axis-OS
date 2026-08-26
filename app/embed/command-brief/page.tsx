@@ -1,3 +1,5 @@
+import AutoRefresh from "../_components/AutoRefresh";
+
 export const dynamic = "force-dynamic";
 
 const NOTION_VERSION = "2022-06-28";
@@ -91,6 +93,7 @@ export default async function CommandBrief() {
   if (setupRequired || errored || !data || !("rows" in data)) {
     return (
       <div className="status-callout status-callout-setup_required">
+        <AutoRefresh />
         <div className="status-callout-body">
           <span className="status-callout-label">axis · live read</span>
           <div className="status-callout-message">
@@ -107,6 +110,7 @@ export default async function CommandBrief() {
 
   return (
     <div className="status-callout status-callout-info">
+      <AutoRefresh />
       <div className="status-callout-body">
         <span className="status-callout-label">axis · live read · {readAt}</span>
         <div className="status-callout-message" style={{ fontFamily: "var(--serif)", fontSize: 13.5, lineHeight: 1.62, color: "var(--ink-2)" }}>

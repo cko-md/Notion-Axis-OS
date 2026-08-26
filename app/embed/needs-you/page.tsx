@@ -1,3 +1,5 @@
+import AutoRefresh from "../_components/AutoRefresh";
+
 export const dynamic = "force-dynamic";
 
 const NOTION_VERSION = "2022-06-28";
@@ -63,6 +65,7 @@ export default async function NeedsYou() {
   if (setupRequired || errored || !data || !("rows" in data)) {
     return (
       <div className="status-callout status-callout-setup_required">
+        <AutoRefresh />
         <div className="status-callout-body">
           <span className="status-callout-label">command · needs you</span>
           <div className="status-callout-message">
@@ -82,6 +85,7 @@ export default async function NeedsYou() {
   if (rows.length === 0) {
     return (
       <div className="status-callout status-callout-success">
+        <AutoRefresh />
         <div className="status-callout-body">
           <span className="status-callout-label">command · needs you</span>
           <div className="status-callout-message">Nothing needs you right now.</div>
@@ -92,6 +96,7 @@ export default async function NeedsYou() {
 
   return (
     <div>
+      <AutoRefresh />
       {rows.map((r, i) => (
         <a
           key={i}

@@ -1,3 +1,5 @@
+import AutoRefresh from "../_components/AutoRefresh";
+
 export const dynamic = "force-dynamic";
 
 const NOTION_VERSION = "2022-06-28";
@@ -51,6 +53,7 @@ export default async function BySource() {
   if (setupRequired || errored || !data || !("results" in data)) {
     return (
       <div className="status-callout status-callout-setup_required">
+        <AutoRefresh />
         <div className="status-callout-body">
           <span className="status-callout-label">command · by source</span>
           <div className="status-callout-message">
@@ -68,6 +71,7 @@ export default async function BySource() {
   if (groups.length === 0) {
     return (
       <div className="status-callout status-callout-empty">
+        <AutoRefresh />
         <div className="status-callout-body">
           <span className="status-callout-label">command · by source</span>
           <div className="status-callout-message">No rows in Command yet.</div>
@@ -78,6 +82,7 @@ export default async function BySource() {
 
   return (
     <div className="tidbits">
+      <AutoRefresh />
       {groups.map(([source, counts]) => (
         <div key={source} className="widget-shell" data-status={counts.needsYou > 0 ? "loading" : "fresh"}>
           <div className="widget-shell-body">

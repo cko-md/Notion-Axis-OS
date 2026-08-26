@@ -1,3 +1,5 @@
+import AutoRefresh from "../_components/AutoRefresh";
+
 export const dynamic = "force-dynamic";
 
 const NOTION_VERSION = "2022-06-28";
@@ -74,6 +76,7 @@ export default async function CommandStrip() {
 
   return (
     <div style={{ padding: "2px 0" }}>
+      <AutoRefresh />
       {setupRequired || errored || !stats ? (
         <div
           style={{
