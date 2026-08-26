@@ -1,0 +1,164 @@
+{
+  "axis": {
+    "path": "/home/claude/build/covers/axis.png",
+    "primary": [
+      201,
+      164,
+      99
+    ],
+    "secondary": [
+      154,
+      124,
+      70
+    ],
+    "hairline": [
+      224,
+      195,
+      136
+    ]
+  },
+  "daily": {
+    "path": "/home/claude/build/covers/daily.png",
+    "primary": [
+      201,
+      164,
+      99
+    ],
+    "secondary": [
+      194,
+      96,
+      63
+    ],
+    "hairline": [
+      224,
+      195,
+      136
+    ]
+  },
+  "operate": {
+    "path": "/home/claude/build/covers/operate.png",
+    "primary": [
+      63,
+      111,
+      176
+    ],
+    "secondary": [
+      111,
+      155,
+      199
+    ],
+    "hairline": [
+      111,
+      155,
+      199
+    ]
+  },
+  "plan": {
+    "path": "/home/claude/build/covers/plan.png",
+    "primary": [
+      154,
+      124,
+      70
+    ],
+    "secondary": [
+      201,
+      164,
+      99
+    ],
+    "hairline": [
+      224,
+      195,
+      136
+    ]
+  },
+  "research-group": {
+    "path": "/home/claude/build/covers/research-group.png",
+    "primary": [
+      111,
+      155,
+      199
+    ],
+    "secondary": [
+      154,
+      124,
+      70
+    ],
+    "hairline": [
+      111,
+      155,
+      199
+    ]
+  },
+  "life": {
+    "path": "/home/claude/build/covers/life.png",
+    "primary": [
+      127,
+      168,
+      106
+    ],
+    "secondary": [
+      154,
+      124,
+      70
+    ],
+    "hairline": [
+      224,
+      195,
+      136
+    ]
+  },
+  "capital": {
+    "path": "/home/claude/build/covers/capital.png",
+    "primary": [
+      201,
+      164,
+      99
+    ],
+    "secondary": [
+      127,
+      168,
+      106
+    ],
+    "hairline": [
+      224,
+      195,
+      136
+    ]
+  },
+  "labs": {
+    "path": "/home/claude/build/covers/labs.png",
+    "primary": [
+      194,
+      96,
+      63
+    ],
+    "secondary": [
+      217,
+      138,
+      95
+    ],
+    "hairline": [
+      217,
+      138,
+      95
+    ]
+  },
+  "system": {
+    "path": "/home/claude/build/covers/system.png",
+    "primary": [
+      150,
+      144,
+      135
+    ],
+    "secondary": [
+      63,
+      111,
+      176
+    ],
+    "hairline": [
+      150,
+      144,
+      135
+    ]
+  }
+}

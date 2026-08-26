@@ -1,0 +1,61 @@
+/* Display / UI / mono hierarchy. Sizes are FIXED — never viewport-scaled. */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@300;400;500;600&family=Archivo+Narrow:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root{
+  /* family primitives */
+  --disp:"Bebas Neue","Archivo Narrow",sans-serif; /* @kind font */
+  --narrow:"Archivo Narrow",sans-serif; /* @kind font */
+  --serif:"Fraunces",Georgia,serif; /* @kind font */
+  --sans:"Archivo",-apple-system,sans-serif; /* @kind font */
+  --mono:"JetBrains Mono",monospace; /* @kind font */
+
+  /* semantic families */
+  --type-display-family:var(--disp);
+  --type-heading-family:var(--narrow);
+  --type-body-family:var(--sans);
+  --type-label-family:var(--narrow);
+  --type-code-family:var(--mono);
+
+  /* semantic sizes */
+  --type-display-size:44px;
+  --type-title-size:22px;
+  --type-heading-size:13px;
+  --type-body-size:13px;
+  --type-small-size:12px;
+  --type-label-size:10px;
+  --type-micro-size:9px;
+
+  /* semantic leading */
+  --type-display-leading:.95;
+  --type-heading-leading:1.25;
+  --type-body-leading:1.55;
+  --type-label-leading:1.35;
+}
+
+/* Base type. Body weight is 300; figures are tabular everywhere. */
+body{
+  font-family:var(--sans);
+  font-size:var(--type-body-size);
+  line-height:var(--type-body-leading);
+  font-weight:300;
+  color:var(--ink);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  font-variant-numeric:tabular-nums;
+}
+::selection{background:color-mix(in srgb,var(--gold) 28%,transparent);color:var(--ink)}
+
+/* type roles */
+.hero-title,h1.hero{font-family:var(--type-display-family);font-weight:400;font-size:var(--type-display-size);line-height:var(--type-display-leading);letter-spacing:.015em;text-transform:uppercase;color:var(--ink);margin:12px 0 0}
+.hero-title em,h1.hero em{font-style:normal;color:var(--gold)}
+.eyebrow{font-family:var(--type-label-family);font-weight:600;font-size:var(--type-label-size);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin:0;display:flex;align-items:center;gap:9px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--line-strong);flex:none}
+h2.sec{font-family:var(--type-heading-family);font-weight:600;font-size:var(--type-small-size);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:12px;margin:0}
+h2.sec .count{font-family:var(--mono);font-size:9.5px;color:var(--ink-faint);letter-spacing:.04em;text-transform:none}
+.seclabel{font-family:var(--type-label-family);font-weight:600;font-size:var(--type-label-size);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.sub{color:var(--ink-dim);margin-top:8px;max-width:62ch;font-size:var(--type-small-size);font-weight:300}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.divider{height:1px;background:var(--line);margin:22px 0}
+a{color:var(--gold);text-decoration:none}
+a:hover{color:var(--gold-2)}

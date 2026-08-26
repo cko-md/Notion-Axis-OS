@@ -1,0 +1,37 @@
+/* Fast and precise for controls; slow and cinematic for atmosphere.
+   Reduced motion collapses ambient movement without hiding state. */
+:root{
+  --axis-motion-fast:140ms /* @kind other */;--axis-motion-base:220ms /* @kind other */;--axis-motion-slow:700ms /* @kind other */;--axis-motion-cinematic:1200ms /* @kind other */;
+  --axis-ease-standard:cubic-bezier(.2,.8,.2,1); /* @kind other */
+  --axis-ease-liquid:cubic-bezier(.19,1,.22,1); /* @kind other */
+  --axis-liquid-ease:cubic-bezier(.19,1,.22,1); /* @kind other */
+
+  --motion-duration-instant:80ms; /* @kind other */
+  --motion-duration-fast:var(--axis-motion-fast); /* @kind other */
+  --motion-duration-base:var(--axis-motion-base); /* @kind other */
+  --motion-duration-deliberate:320ms; /* @kind other */
+  --motion-duration-ambient:var(--axis-motion-slow); /* @kind other */
+  --motion-ease-standard:var(--axis-ease-standard); /* @kind other */
+  --motion-ease-enter:cubic-bezier(.16,1,.3,1); /* @kind other */
+  --motion-ease-exit:cubic-bezier(.4,0,1,1); /* @kind other */
+
+  --axis-loading-sheen-duration:1400ms; /* @kind other */
+  --axis-loading-sheen-angle:110deg; /* @kind other */
+
+  /* effects */
+  --blur:saturate(135%) blur(52px) /* @kind other */;
+  --glow:0 0 14px color-mix(in srgb,var(--accent) 36%,transparent) /* @kind shadow */;
+  --glow-soft:0 0 24px color-mix(in srgb,var(--accent) 18%,transparent) /* @kind shadow */;
+  --gradient-hero:linear-gradient(100deg,var(--accent-bright),var(--accent)); /* @kind other */
+  --gradient-btn:linear-gradient(135deg,var(--accent-bright),var(--accent)); /* @kind other */
+  --gradient-primary:linear-gradient(180deg,var(--accent-bright),var(--accent-deep)); /* @kind other */
+  --panel-shadow:0 24px 54px -34px rgba(0,0,0,.9);
+}
+@keyframes axis-control-spin{to{transform:rotate(360deg)}}
+@keyframes axis-loading-sheen{from{transform:translateX(-120%);opacity:0}20%{opacity:1}to{transform:translateX(120%);opacity:0}}
+@keyframes pulse{50%{opacity:.35}}
+@keyframes modal-bg-in{from{opacity:0}to{opacity:1}}
+@keyframes modal-card-in{from{opacity:0;transform:translateY(6px) scale(.99)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .axis-loading-sheen::after{animation:none!important;opacity:.4;transform:translateX(0)}
+}

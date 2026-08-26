@@ -1,0 +1,13 @@
+/* Compact console spacing. Not a 4/8 grid — the scale is 6/10/14/20/26/34. */
+:root{
+  --space-1:6px;--space-2:10px;--space-3:14px;--space-4:20px;--space-5:26px;--space-6:34px;
+  --section-gap:var(--space-5);
+  --card-pad:16px;
+  --r:3px;   /* control / chip radius */
+  --rl:7px;  /* panel / card radius */
+  --topbar-h:54px;
+  --sidebar-w:240px;
+  --sidebar-w-icons:62px;
+}
+.grid{display:grid;gap:var(--space-3)}
+.view-pad{padding:calc(var(--topbar-h) + 44px) 34px 70px;max-width:1280px;margin-inline:auto}

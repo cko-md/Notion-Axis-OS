@@ -1,0 +1,38 @@
+/* State vocabulary: muted → accent → success/warning → alert/danger.
+   Color is never the only signal — every state carries a text label or icon. */
+
+/* status callout */
+.status-callout{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:var(--r);background:var(--glass);color:var(--ink-muted);padding:10px 12px;font-size:12px}
+.status-callout-body{min-width:0;display:grid;gap:4px}
+.status-callout-label{font-family:var(--mono);font-size:9px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em}
+.status-callout strong{color:var(--ink);font-size:13px}
+.status-callout-message{line-height:1.45}
+.status-callout-action{flex:none}
+.status-callout-error{border-color:color-mix(in srgb,var(--clay) 42%,transparent);color:var(--clay);background:color-mix(in srgb,var(--clay) 8%,var(--glass))}
+.status-callout-stale,.status-callout-setup_required{border-color:color-mix(in srgb,var(--gold) 36%,transparent);color:var(--gold-2);background:color-mix(in srgb,var(--gold) 7%,var(--glass))}
+.status-callout-success{border-color:color-mix(in srgb,var(--up) 34%,transparent);color:var(--up);background:color-mix(in srgb,var(--up) 7%,var(--glass))}
+.status-callout-disconnected,.status-callout-empty,.status-callout-info,.status-callout-loading{border-color:var(--line)}
+
+/* widget status badge */
+.widget-status-badge{flex:none;border:1px solid var(--line);border-radius:2px;padding:2px 5px;font-family:var(--mono);font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);white-space:nowrap;display:inline-flex;align-items:center}
+.widget-status-fresh,.widget-status-live{color:var(--status-live);border-color:color-mix(in srgb,var(--status-live) 36%,transparent)}
+.widget-status-loading,.widget-status-refreshing{color:var(--status-loading);border-color:color-mix(in srgb,var(--status-loading) 42%,transparent)}
+.widget-status-stale,.widget-status-setup_required{color:var(--status-stale);border-color:color-mix(in srgb,var(--status-stale) 42%,transparent)}
+.widget-status-error{color:var(--status-error);border-color:color-mix(in srgb,var(--status-error) 42%,transparent)}
+.widget-status-lab,.widget-status-empty{color:var(--status-lab);border-color:color-mix(in srgb,var(--status-lab) 34%,transparent)}
+.widget-status-disabled,.widget-status-disconnected{color:var(--status-disconnected);border-color:color-mix(in srgb,var(--status-disconnected) 34%,transparent)}
+
+/* priority / tag pill */
+.pill{font-family:var(--mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:2px;border:1px solid var(--line);color:var(--ink-dim)}
+.pill.hi{color:var(--clay-2);border-color:color-mix(in srgb,var(--clay) 40%,transparent)}
+.pill.med{color:var(--gold);border-color:color-mix(in srgb,var(--gold) 40%,transparent)}
+.pill.lo{color:var(--marine-2);border-color:color-mix(in srgb,var(--marine) 40%,transparent)}
+
+/* maturity banner — production / beta / lab are surfaced, never conflated */
+.module-status{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin:0 0 18px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r);background:color-mix(in srgb,var(--surface-2) 82%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.module-status strong{display:block;color:var(--ink);font-size:13px;font-weight:650}
+.module-status p,.module-status span{margin:4px 0 0;color:var(--ink-dim);font-size:12px;line-height:1.45}
+.module-status span{max-width:360px;text-align:right}
+.module-status-kicker{margin-bottom:5px;font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+.module-status-beta .module-status-kicker{color:var(--status-loading)}
+.module-status-lab .module-status-kicker{color:var(--status-lab)}

@@ -1,0 +1,40 @@
+/* AXIS · ATELIER — ground, glass, ink, accents, status.
+   Lifted verbatim from src/app/globals.css (:root) in cko-md/axis. */
+:root{
+  /* ground — austere near-black, faint warm tint */
+  --bg:#0a0b0e;--surface:#10131a;--surface-2:#161a23;--surface-3:#1e222d;
+  /* glass */
+  --glass:rgba(232,228,220,.05);--glass-2:rgba(232,228,220,.08);
+  --accent-subtle:rgba(201,164,99,.10);
+  --line:rgba(205,195,177,.16);--line-strong:rgba(214,204,186,.28);
+  --edge:rgba(244,238,228,.12);--metal-edge:rgba(244,238,228,.12);
+  --grid:rgba(180,170,150,.03);
+  /* type ink — warm bone, never pure white */
+  --ink:#ece8e0;--ink-2:#d4cec2;--ink-dim:#a09891;--ink-faint:#969087;
+  /* accents — gold primary, marine data, clay warm */
+  --gold:#c9a463;--gold-2:#e0c388;--gold-deep:#9a7c46;
+  --marine:#3f6fb0;--marine-2:#6f9bc7;
+  --clay:#c2603f;--clay-2:#d98a5f;
+  --up:#7fa86a;--down:#c2603f;
+  /* semantic states */
+  --status-live:#7fa86a;--status-loading:#6f9bc7;--status-stale:#c9a463;
+  --status-error:#c2603f;--status-lab:#d98a5f;--status-disconnected:#857e74;--status-local:#a89880;
+  --chart-axis:rgba(214,204,186,.2);--chart-grid:rgba(180,170,150,.07);
+  /* accent aliases — rebound at runtime by Interface Studio */
+  --accent:#c9a463;--accent-bright:#e0c388;--accent-deep:#9a7c46;--accent-2:#c9a463;
+  --spark:#7fa86a;--spark-bright:#9cc488;--dew:#7fa86a;--dew-warm:#e0c388;
+  /* interaction contrast — independent of the user-selectable accent */
+  --focus-indicator:var(--ink);
+  --focus-ring:0 0 0 2px var(--bg),0 0 0 4px var(--focus-indicator);
+  --on-accent:#0a0b0e;
+  /* atmospheric iridescence — scene level only, never functional UI */
+  --axis-iridescent-sage:rgb(160,224,171);--axis-iridescent-amber:rgb(255,172,46);
+  --axis-iridescent-oxblood:rgb(165,45,37);--axis-dusk-violet:rgb(107,98,242);
+  --axis-cobalt:rgb(48,92,220);
+  --axis-chrome-white:#f8fafc;--axis-chrome-silver:#d7dce5;--axis-chrome-graphite:#16181d;
+  --axis-glass-border:rgba(255,255,255,.16);--axis-glass-fill:rgba(255,255,255,.07);
+  --axis-liquid-pearl:rgba(248,250,252,.72);--axis-liquid-veil:rgba(255,255,255,.08);
+  --axis-liquid-glint:rgba(255,255,255,.22);--axis-liquid-shadow:rgba(0,0,0,.42);
+  /* companion presence accents */
+  --companion-nova-core:var(--marine);--companion-nova-glow:var(--marine-2);--companion-axiom-ring:var(--gold);
+}

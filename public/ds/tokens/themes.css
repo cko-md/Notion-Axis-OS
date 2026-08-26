@@ -1,0 +1,64 @@
+/* Four themes rebind the same roles. Apply on <html>: class="dim" | "slate" | "light".
+   Dark is :root (tokens/colors.css). Lifted from cko-md/axis globals.css. */
+
+/* dim — amber study lamp: warm brown-black ground, distinct from cold void-dark */
+html.dim{
+  --bg:#0e0c09;--surface:#151209;--surface-2:#1c180f;--surface-3:#241f14;
+  --line:rgba(215,200,168,.2);--line-strong:rgba(224,208,176,.34);
+  --edge:rgba(248,238,215,.16);--metal-edge:rgba(248,238,215,.16);
+  --glass:rgba(240,228,196,.06);--glass-2:rgba(240,228,196,.11);
+  --gold:#d4a843;--gold-2:#e8c068;
+  --ink:#f0e8d8;--ink-2:#d8ccb8;--ink-dim:#a89880;--ink-faint:#a89880;
+  --status-live:#8fb36a;--status-loading:#d0a54a;--status-stale:#e8c068;--status-error:#d98a5f;
+  --status-lab:#c78d4a;--status-disconnected:#8c7f63;--status-local:#b59a6a;
+  --chart-axis:rgba(224,208,176,.24);--chart-grid:rgba(215,200,168,.08);
+}
+
+/* slate — the ultramarine room: cool ground, marine pops, gold stays */
+html.slate{
+  --bg:#0b0f16;--surface:#101622;--surface-2:#16202f;--surface-3:#1e2a3d;
+  --line:rgba(177,194,221,.15);--line-strong:rgba(190,206,232,.28);
+  --edge:rgba(226,236,250,.12);--metal-edge:rgba(226,236,250,.12);
+  --glass:rgba(220,228,240,.05);--glass-2:rgba(220,228,240,.08);--grid:rgba(150,170,205,.04);
+  --ink:#e6e9f0;--ink-2:#c3cbd9;--ink-dim:#8590a3;--ink-faint:#8794aa;
+  --status-live:#7fa86a;--status-loading:#6f9bc7;--status-stale:#c9a463;--status-error:#d98a5f;
+  --status-lab:#8bb4e6;--status-disconnected:#5c6a82;--status-local:#8590a3;
+  --chart-axis:rgba(190,206,232,.22);--chart-grid:rgba(150,170,205,.08);
+}
+
+/* light — gallery chrome: cool silver-white room, graphite ink, frosted white glass */
+html.light{
+  --accent-subtle:rgba(89,111,139,.12);
+  --bg:#dfe5ee;--surface:#eef2f8;--surface-2:#e2e8f1;--surface-3:#d2dae6;
+  --line:rgba(41,55,74,.14);--line-strong:rgba(41,55,74,.28);
+  --edge:rgba(255,255,255,.96);--metal-edge:rgba(150,166,188,.44);
+  --glass:rgba(255,255,255,.78);--glass-2:rgba(255,255,255,.92);--grid:rgba(74,96,124,.05);
+  --panel-shadow:0 1px 2px rgba(41,55,74,.06),0 6px 20px rgba(41,55,74,.07);
+  --ink:#111820;--ink-2:#26313e;--ink-dim:#445363;--ink-faint:#4f5e6e;
+  --gold:#9b7b32;--gold-2:#c2a454;--gold-deep:#6f561f;
+  --marine:#315d92;--marine-2:#4f7daf;--clay:#9a4f35;--clay-2:#bd6d4c;
+  --up:#4f7b59;--down:#9a4f35;
+  --status-live:#4f7b59;--status-loading:#4f7daf;--status-stale:#9b7b32;--status-error:#9a4f35;
+  --status-lab:#7b8da3;--status-disconnected:#657484;--status-local:#5d6875;
+  --chart-axis:rgba(31,42,56,.24);--chart-grid:rgba(58,76,100,.08);
+  --blur:saturate(165%) blur(30px); /* @kind other */
+  --glow:0 0 16px color-mix(in srgb,#8fa2ba 36%,transparent); /* @kind shadow */
+  --glow-soft:0 0 30px color-mix(in srgb,#8fa2ba 18%,transparent); /* @kind shadow */
+}
+html.light :is(.card,.axis-reflective-card){
+  background:linear-gradient(168deg,rgba(255,255,255,.9),rgba(231,237,245,.76) 58%);
+  backdrop-filter:saturate(150%) blur(26px);-webkit-backdrop-filter:saturate(150%) blur(26px);color:var(--ink);
+  box-shadow:0 1px 0 rgba(255,255,255,.94) inset,0 2px 0 rgba(255,255,255,.54) inset,0 8px 22px -12px rgba(35,50,68,.18),0 26px 56px -36px rgba(18,30,44,.24);
+}
+html.light :is(.card,.axis-reflective-card)::after{
+  background:linear-gradient(158deg,rgba(255,255,255,.82),transparent 24%),linear-gradient(320deg,rgba(78,125,175,.07),transparent 42%);
+}
+html.light .widget-shell{box-shadow:0 1px 0 var(--edge) inset,var(--panel-shadow)}
+html.light .sidebar{background:linear-gradient(180deg,rgba(246,248,251,.9),rgba(226,232,240,.94));border-right-color:rgba(56,70,88,.2);box-shadow:1px 0 0 rgba(255,255,255,.72) inset}
+html.light .topbar{background:linear-gradient(180deg,rgba(250,252,255,.82),rgba(229,235,243,.72));border-color:rgba(62,78,98,.22);box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 14px 34px -24px rgba(26,40,56,.36)}
+html.light .navlabel{color:var(--ink-dim)}
+html.light .avatar{background:conic-gradient(from 210deg,#c9d2dd,#f9fbfd,#b7c2d0,#e8edf3,#c9d2dd);border-color:rgba(60,76,96,.28)}
+html.light .sub{color:var(--ink-2)}
+html.light .hero-title em{color:var(--gold-deep)}
+html.dim .sidebar{background:linear-gradient(180deg,rgba(22,18,10,.82),rgba(14,12,9,.92));border-right-color:rgba(215,200,168,.18)}
+html.dim .topbar{background:rgba(14,12,9,.58);border-bottom-color:rgba(215,200,168,.18)}

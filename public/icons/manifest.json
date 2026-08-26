@@ -1,0 +1,226 @@
+{
+  "command": {
+    "lucide": "layout-dashboard",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/command.svg",
+    "png": "/home/claude/build/icons/png/command.png"
+  },
+  "dispatch": {
+    "lucide": "radio",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/dispatch.svg",
+    "png": "/home/claude/build/icons/png/dispatch.png"
+  },
+  "schedule": {
+    "lucide": "calendar",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/schedule.svg",
+    "png": "/home/claude/build/icons/png/schedule.png"
+  },
+  "agenda": {
+    "lucide": "list-todo",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/agenda.svg",
+    "png": "/home/claude/build/icons/png/agenda.png"
+  },
+  "mail": {
+    "lucide": "mail",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/mail.svg",
+    "png": "/home/claude/build/icons/png/mail.png"
+  },
+  "notes": {
+    "lucide": "clipboard-list",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/notes.svg",
+    "png": "/home/claude/build/icons/png/notes.png"
+  },
+  "tasks": {
+    "lucide": "bot",
+    "tier": "beta",
+    "stroke": "#6f9bc7",
+    "svg": "/home/claude/build/icons/svg/tasks.svg",
+    "png": "/home/claude/build/icons/png/tasks.png"
+  },
+  "approvals": {
+    "lucide": "shield-check",
+    "tier": "beta",
+    "stroke": "#6f9bc7",
+    "svg": "/home/claude/build/icons/svg/approvals.svg",
+    "png": "/home/claude/build/icons/png/approvals.png"
+  },
+  "memory": {
+    "lucide": "brain",
+    "tier": "beta",
+    "stroke": "#6f9bc7",
+    "svg": "/home/claude/build/icons/svg/memory.svg",
+    "png": "/home/claude/build/icons/png/memory.png"
+  },
+  "objectives": {
+    "lucide": "target",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/objectives.svg",
+    "png": "/home/claude/build/icons/png/objectives.png"
+  },
+  "debrief": {
+    "lucide": "rotate-ccw",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/debrief.svg",
+    "png": "/home/claude/build/icons/png/debrief.png"
+  },
+  "pipeline": {
+    "lucide": "git-branch",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/pipeline.svg",
+    "png": "/home/claude/build/icons/png/pipeline.png"
+  },
+  "research": {
+    "lucide": "book-open",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/research.svg",
+    "png": "/home/claude/build/icons/png/research.png"
+  },
+  "people": {
+    "lucide": "users",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/people.svg",
+    "png": "/home/claude/build/icons/png/people.png"
+  },
+  "briefing": {
+    "lucide": "newspaper",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/briefing.svg",
+    "png": "/home/claude/build/icons/png/briefing.png"
+  },
+  "fund": {
+    "lucide": "line-chart",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/fund.svg",
+    "png": "/home/claude/build/icons/png/fund.png"
+  },
+  "vitality": {
+    "lucide": "dumbbell",
+    "tier": "lab",
+    "stroke": "#d98a5f",
+    "svg": "/home/claude/build/icons/svg/vitality.svg",
+    "png": "/home/claude/build/icons/png/vitality.png"
+  },
+  "atelier": {
+    "lucide": "paintbrush",
+    "tier": "lab",
+    "stroke": "#d98a5f",
+    "svg": "/home/claude/build/icons/svg/atelier.svg",
+    "png": "/home/claude/build/icons/png/atelier.png"
+  },
+  "listening-vault": {
+    "lucide": "disc-3",
+    "tier": "lab",
+    "stroke": "#d98a5f",
+    "svg": "/home/claude/build/icons/svg/listening-vault.svg",
+    "png": "/home/claude/build/icons/png/listening-vault.png"
+  },
+  "library": {
+    "lucide": "folder-open",
+    "tier": "lab",
+    "stroke": "#d98a5f",
+    "svg": "/home/claude/build/icons/svg/library.svg",
+    "png": "/home/claude/build/icons/png/library.png"
+  },
+  "supper-club": {
+    "lucide": "chef-hat",
+    "tier": "lab",
+    "stroke": "#d98a5f",
+    "svg": "/home/claude/build/icons/svg/supper-club.svg",
+    "png": "/home/claude/build/icons/png/supper-club.png"
+  },
+  "control-room": {
+    "lucide": "settings",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/control-room.svg",
+    "png": "/home/claude/build/icons/png/control-room.png"
+  },
+  "blueprint": {
+    "lucide": "network",
+    "tier": "production",
+    "stroke": "#c9a463",
+    "svg": "/home/claude/build/icons/svg/blueprint.svg",
+    "png": "/home/claude/build/icons/png/blueprint.png"
+  },
+  "axis": {
+    "lucide": "zap",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/axis.svg",
+    "png": "/home/claude/build/icons/png/axis.png"
+  },
+  "daily": {
+    "lucide": "sunrise",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/daily.svg",
+    "png": "/home/claude/build/icons/png/daily.png"
+  },
+  "operate": {
+    "lucide": "cpu",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/operate.svg",
+    "png": "/home/claude/build/icons/png/operate.png"
+  },
+  "plan": {
+    "lucide": "compass",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/plan.svg",
+    "png": "/home/claude/build/icons/png/plan.png"
+  },
+  "research-group": {
+    "lucide": "microscope",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/research-group.svg",
+    "png": "/home/claude/build/icons/png/research-group.png"
+  },
+  "life": {
+    "lucide": "heart",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/life.svg",
+    "png": "/home/claude/build/icons/png/life.png"
+  },
+  "capital": {
+    "lucide": "landmark",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/capital.svg",
+    "png": "/home/claude/build/icons/png/capital.png"
+  },
+  "labs": {
+    "lucide": "flask-conical",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/labs.svg",
+    "png": "/home/claude/build/icons/png/labs.png"
+  },
+  "system": {
+    "lucide": "sliders-horizontal",
+    "tier": "group",
+    "stroke": "#9a7c46",
+    "svg": "/home/claude/build/icons/svg/system.svg",
+    "png": "/home/claude/build/icons/png/system.png"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "axis-notion-embeds",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AXIS design-system asset host + live Notion embeds for the AXIS Notion workspace. Repo scaffold — push to a GitHub repo under your account, then run `vercel link` (or reconnect this Vercel project to the repo) to wire git-based deploys.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/react": "^18.3.12",
+    "@types/node": "^20.16.11"
+  }
+}

@@ -1,0 +1,23 @@
+/* Components consume ROLES, not raw colors. Themes rebind the primitives; these
+   aliases stay stable. Mirrors src/lib/design/{systemTokens,statusTokens}.ts. */
+:root{
+  /* surfaces */
+  --surface-canvas:var(--bg);
+  --surface-chrome:var(--surface);
+  --surface-panel:var(--glass);
+  --surface-panel-raised:var(--glass-2);
+  --surface-input:var(--surface-2);
+  --surface-overlay:var(--surface);
+  --border-subtle:var(--line);
+  --border-strong:var(--line-strong);
+  --shadow-panel:var(--panel-shadow);
+  --ink-muted:var(--ink-dim);
+
+  /* semantic tone scale: muted → accent → success/warning → alert/danger */
+  --tone-muted:var(--ink-faint);
+  --tone-accent:var(--accent);
+  --tone-success:var(--up);
+  --tone-warning:var(--clay-2,var(--gold-deep));
+  --tone-alert:var(--clay);
+  --tone-danger:var(--down);
+}
